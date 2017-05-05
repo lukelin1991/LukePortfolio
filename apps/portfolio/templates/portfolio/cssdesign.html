@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Luke Lin - Web Development Portfolio</title>
+<meta name="description" content="Luke Lin is a new up and coming Web Developer/specialist located in Hazlet, New Jersey." />
+<meta name="keywords" content="Web Development, Front-End Development, Back-End Development, Fullstack Development, new jersey, Python, Django, Luke Lin." />
+{% load staticfiles %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/main2.css' %}" />
+<link type="text/css" href="{% static 'css/smoothness/jquery-ui-1.8.16.custom.css' %}" rel="stylesheet" />
+<link type="text/css" rel="Stylesheet" href="{% static 'css/bjqs.css' %}" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="{% static 'js/jquery-1.11.1.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bjqs-1.3.min.js' %}"></script>
+<script src="{% static 'js/jquery.kwicks-1.5.1.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}" type="text/javascript"></script>
+<script type="text/javascript" src="{% static 'js/jquery-ui-1.8.16.custom.min.js' %}"></script>
+<script type="text/javascript">
+			$(function() {
+		$( "#tabs" ).tabs({
+			event: "mouseover"
+		});
+	});
+		</script>
+<script type="text/javascript">
+	$().ready(function() {
+    $('.kwicks').kwicks({
+        max : 205,
+        spacing : 3,
+        isVertical : true
+    });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21429198-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+jQuery(document).ready(function($) {
+    $('#banner-fade').bjqs({
+        'height' : 400,
+        'width' : 800,
+        'responsive' : false
+    });
+});
+</script>
+</head>
+
+<body>
+
+  <div id="page">
+    <div id="logo_bg_main" class="logo_home">
+
+			<!--Begin Top Title Bar -->
+	    <div id="topbar">
+	      <div id="logo"> <a href="/">
+	        <h1><img src="{% static 'images/logo.png' %}" width="332" height="164" alt="Luke Lin - fullstack, web development" /></h1>
+	        </a> </div>
+	      <div id="tagline"> <a href="mailto:lukelin1991@yahoo.com"><b>lukelin1991@yahoo.com</b></a></div>
+	    </div>
+	    <!--End Title Bar -->
+
+	    <!--Begin Main Content Area-->
+	    <div id="content">
+
+	      <!--Begin Nav Column -->
+	      <div id="nav_container">
+	        <div id="nav">
+	          <ul class="kwicks">
+	            <li id="kwick_1"><a href="/"><img src="{% static 'images/nav_home_button.png' %}" width="160" height="65" alt="Luke Lin Index" /></a></li>
+	            <li id="kwick_2"><a href="cssdesign"><img src="{% static 'images/nav_design_button.png' %}" width="160" height="65" alt="CSS Design Practice by Luke Lin" /></a></li>
+	            <li id="kwick_3"><a href="projects"><img src="{% static 'images/nav_project_button.png' %}" width="160" height="65" alt="Projects by Luke Lin" /></a></li>
+	            <li id="kwick_4"><a href="about"><img src="{% static 'images/nav_about_button.png' %}" width="160" height="65" alt="About Luke Lin" /></a></li>
+	          </ul>
+	        </div>
+	        <div style="width: 100%; height: 20px; display: block; clear: both;"> </div>
+	        <div id="social-media">
+	          <div align="center">
+							<a href="https://www.linkedin.com/in/luke-lin-7b0b6913b/"><img src="{% static 'images/linkedin-icon.png' %}" width="50" height="50" alt="Luke's Linkedin Profile" style="padding-right:5px; padding-left:5px;" /></a>
+							<a href="https://www.linkedin.com/in/luke-lin-7b0b6913b/"><img src="{% static 'images/twitter-icon.png' %}" width="50" height="50" alt="Luke's Twitter" style="padding-right:5px;" /></a>
+							<a href="https://www.linkedin.com/in/luke-lin-7b0b6913b/"><img src="{% static 'images/behance-icon.png' %}" width="50" height="50" alt="Luke's Behance Profile" style="padding-right:5px;"/></a>
+						</div>
+	        </div>
+	      </div>
+	      <!--End Nav Column-->
+
+      <!--Begin Main Display Area-->
+      <div id="display" class="display_contact">
+        <div align="center" id="circuitsbg"><!-- .coda-slider-wrapper -->
+          <div id="tabs" class="shadow">
+            <ul>
+              <li><a href="#tabs-1">CSS Practice... the early days </a></li>
+							<li><a href="#tabs-2">CSS Practice... getting better </a></li>
+            </ul>
+
+            <div id="tabs-1">
+              <div class="tab_image"><img src="{% static 'images/portfolio/csspractice1.png' %}" width="580" height="440" alt="CSS first design" /></div>
+              	<h3>The Early Days of CSS...</h3>
+                <p>This is one of the first CSS design projects I've worked on in the beginning of my journey..... </p>
+								<br />
+								<p>but if you want to really see what my web development experience/projects are... click on this inconspicuous looking... <a href="projects"
+									style="background: linear-gradient(#26689f, #5283ad); margin: auto; margin-top: 20px; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; width: 200px; box-shadow: 2px 2px 2px grey; font-weight: 500; color: white; text-decoration: none; font-size: 14px;">Button</a></p>
+              </div>
+            <div id="tabs-2">
+              <div class="tab_image"><img src="{% static 'images/portfolio/csspractice2.png' %}" width="580" height="592" alt="Practicing more CSS designing/manipulating" /></a>
+              <br /><br />
+              <img src="{% static 'images/portfolio/csspractice2-2.png' %}" width="580" height="592" alt="Practicing CSS designing/manipulating part 2" /></a></div>
+              	<h3>CSS Practicing... part 2.  The training..</h3>
+                <p>It was a pleasure working on these projects because it really helped solidify my knowledge of how basic CSS works, and it played a BIG role in my journey as a web developer.</p>
+								<br />
+								<p>but if you want to really see what my web development experience/projects are... click on this inconspicuous looking... <a href="projects"
+									style="background: linear-gradient(#26689f, #5283ad); margin: auto; margin-top: 20px; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; width: 200px; box-shadow: 2px 2px 2px grey; font-weight: 500; color: white; text-decoration: none; font-size: 14px;">Button</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--End Main Display Area-->
+
+      <div style="clear:both;"></div>
+    </div>
+    <!--End Main Content Area-->
+
+  </div>
+  <div class="push"></div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+  <div id="footer_padding">
+    <div id="foot_about">
+      <h3>Welcome to Luke's Portfolio</h3>
+      <p>Hello and thank you for visiting my portfolio! I am a python/django web developer located in Hazlet, New Jersey, I am studying Web development at CodingDojo as an online cohort, and on top of all that, I'm also a "Jack-of-All-Trades" type of person.  I always love to improve myself any way i can. If you have any questions or would like to know more, please feel free to <a href="mailto:lukelin1991@yahoo.com">drop me a line</a>!</p>
+    </div>
+    <div id="foot_blog">
+      <h3>Luke's Blog</h3>
+      <p>Coming soon!</p>
+    </div>
+    <!-- <div id="foot_contact">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li style="color:black; font-weight:600;">CSS design practices</li>
+        <li><a href="/projects">projects</a></li>
+        <li><a href="/about">About Luke</a></li>
+      </ul>
+    </div> -->
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<!--End Footer -->
+</body>
+</html>
